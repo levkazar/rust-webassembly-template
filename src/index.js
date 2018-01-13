@@ -1,5 +1,5 @@
-import rust from './index.rs';
+import Rust from './index.rs';
 
-rust.then(lib => {
-  console.log('return value was', lib.add(2, 3));
+Rust.then(rustLib => {
+  console.log('return value was', rustLib.add(2, 3));
 });
