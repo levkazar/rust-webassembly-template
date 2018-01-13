@@ -6,6 +6,9 @@ First time install
 
 Create new rust project
 1. `cargo init project_name`
-5. `cd prject_name`
+5. `cd project_name`
 5. `yarn init`
 4. `yarn add --dev rust-native-wasm-loader wasm-loader http-server`
+
+Additions for cargo-web
+1. `cargo install cargo-web`

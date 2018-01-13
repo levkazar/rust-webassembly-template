@@ -1,24 +1,30 @@
-const path = require('path');
+const path = require("path");
 
 module.exports = {
-  entry: './src/index.js',
+  entry: "./src/index.js",
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: "index.js",
+    path: path.resolve(__dirname, "dist")
   },
   module: {
     rules: [
       {
         test: /\.rs$/,
-        use: [{
-          loader: 'wasm-loader'
-        }, {
-          loader: 'rust-native-wasm-loader',
-          options: {
-            release: true
+        use: [
+          {
+            loader: "rust-native-wasm-loader",
+            options: {
+              cargoWeb: true,
+              name: "static/wasm/[name].[hash:8].wasm",
+              release: true
+            }
           }
-        }]
+        ]
       }
     ]
+  },
+  externals: {
+    fs: true,
+    path: true
   }
 };

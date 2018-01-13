@@ -1,6 +1,5 @@
-import rustWasm from './lib.rs'
+import rust from './index.rs';
 
-rustWasm().then(result => {
-  const add = result.instance.exports['add'];
-  console.log('return value was', add(2, 3));
+rust.then(lib => {
+  console.log('return value was', lib.add(2, 3));
 });

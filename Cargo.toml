@@ -1,9 +1,11 @@
 [package]
-name = "webassembly_test"
+name = "webassembly_template"
 version = "0.1.0"
-authors = ["christian.wolff"]
+authors = ["your.name"]
 
 [dependencies]
+stdweb = "0.3.0"
 
-[lib]
-crate-type = ["cdylib"]
+[[bin]]
+name = "lib"
+path = "src/index.rs"
