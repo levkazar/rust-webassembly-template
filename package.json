@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "compile": "webpack --progress",
+    "serve": "http-server"
+  },
+  "name": "webassembly_test",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "http-server": "^0.11.1",
+    "rust-native-wasm-loader": "^0.2.2",
+    "wargo-loader": "^0.3.0",
+    "wasm-loader": "^1.1.0"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

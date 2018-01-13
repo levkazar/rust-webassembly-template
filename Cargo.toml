@@ -1,0 +1,9 @@
+[package]
+name = "webassembly_test"
+version = "0.1.0"
+authors = ["christian.wolff"]
+
+[dependencies]
+
+[lib]
+crate-type = ["cdylib"]
