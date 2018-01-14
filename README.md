@@ -1,4 +1,5 @@
-# A template for Rust Webassembly, using Webpack [![Build Status](https://travis-ci.org/levkazar/rust-webassembly-template.svg?branch=travis)](https://travis-ci.org/levkazar/rust-webassembly-template)
+[![Build Status](https://travis-ci.org/levkazar/rust-webassembly-template.svg?branch=travis)](https://travis-ci.org/levkazar/rust-webassembly-template)
+# A template for Rust Webassembly, using Webpack 
 This template is configured for compilation to native wasm, and integrates the bytecode directly into the webpack output. If you want to try the experimental `cargo-web` variant instead, which keeps the `.wasm` files separate from `.js`, a template can be found in the branch `cargoWeb`.  
 See (https://github.com/dflemstr/rust-native-wasm-loader) for a detailed description of the webpack loader.
 
