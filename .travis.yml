@@ -12,5 +12,6 @@ before_install:
 install:
   - rustup target add wasm32-unknown-unknown --toolchain nightly
   - npm install webpack
+  - npm install
 
 script: npm run compile
