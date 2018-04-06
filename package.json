@@ -1,7 +1,7 @@
 {
   "scripts": {
     "compile": "webpack --progress",
-    "serve": "http-server ./dist"
+    "start": "http-server ./dist"
   },
   "name": "webassembly_template",
   "version": "1.0.0",

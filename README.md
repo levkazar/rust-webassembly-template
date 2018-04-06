@@ -4,7 +4,7 @@ This template is configured for compilation to native wasm, and integrates the b
 See (https://github.com/dflemstr/rust-native-wasm-loader) for a detailed description of the webpack loader.
 
 ## Prerequisites
-- webpack and yarn are globally available.
+- yarn is globally available.
 - rust is globally available.
 
 ## First time installation of rustup nightly
@@ -17,5 +17,5 @@ See (https://github.com/dflemstr/rust-native-wasm-loader) for a detailed descrip
 5. `yarn install` to install npm dependencies.
 6. `src/index.js` is the entry point for webpack. 
 7. Rust library code goes to `src/lib.rs`
-8. `npm run compile` to run webpack once. Output is compiled to `target` and `dist`.
-9. `npm run serve` to start the local test server, serving from `dist`.  
+8. `yarn run compile` to run webpack once. Output is compiled to `target` and `dist`.
+9. `yarn start` to start the local test server, serving from `dist`.  
