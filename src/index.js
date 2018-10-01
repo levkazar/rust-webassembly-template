@@ -2,5 +2,6 @@ import rustWasm from './lib.rs'
 
 rustWasm().then(result => {
   const add = result.instance.exports['add'];
-  console.log('return value was', add(2, 3));
+  var message = 'return value was ' + add(2, 3)
+  alert(message);
 });
