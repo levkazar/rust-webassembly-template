@@ -15,5 +15,5 @@ install:
   - yarn install
 
 script:
-  - npm run webpack
   - npm run compile
+  - npm run webpack
