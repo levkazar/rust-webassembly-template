@@ -1,6 +1,11 @@
-import Rust from './index.rs';
+import * as Rust from "./index.rs";
 
-Rust.then(rustLib => {
-  let message = 'return value was ' + rustLib.add(2, 3);
-  alert(message);
-});
+(async () => {
+  try {
+    const lib = await Rust;
+    let message = "return value was " + lib.add(2, 3);
+    alert(message);
+  } catch (e) {
+    alert(e);
+  }
+})();
