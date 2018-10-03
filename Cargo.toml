@@ -4,8 +4,8 @@ version = "0.1.0"
 authors = ["your.name"]
 
 [dependencies]
-cargo-web = "0.6.10"
-stdweb = "0.4.2"
+cargo-web = "0.6.16"
+stdweb = "0.4.9"
 
 [[bin]]
 name = "rustLib"
