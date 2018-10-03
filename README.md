@@ -1,21 +1,26 @@
-[![Build Status](https://travis-ci.org/levkazar/rust-webassembly-template.svg?branch=travis)](https://travis-ci.org/levkazar/rust-webassembly-template)
-# A template for Rust Webassembly, using Webpack 
-This template is configured for compilation to native wasm, and integrates the bytecode directly into the webpack output. If you want to try the experimental `cargo-web` variant instead, which keeps the `.wasm` files separate from `.js`, a template can be found in the branch `cargoWeb`.  
-See (https://github.com/dflemstr/rust-native-wasm-loader) for a detailed description of the webpack loader.
+[![Build Status](https://travis-ci.org/levkazar/rust-webassembly-template.svg?branch=wasmPack)](https://travis-ci.org/levkazar/rust-webassembly-template)
+# A template for Rust Webassembly, using Webpack
+This template is configured for compilation with `wasm-pack`.
 
 ## Prerequisites
-- yarn is globally available.
+- webpack and yarn are globally available.
 - rust is globally available.
 
 ## First time installation of rustup nightly
 1. `rustup toolchain install nightly`
-3. `rustup target add wasm32-unknown-unknown --toolchain nightly` 
+3. `rustup target add wasm32-unknown-unknown --toolchain nightly`
 4. `rustup default nightly`
+
+## Install wasm-pack
+`cargo install wasm-pack`
+or
+https://rustwasm.github.io/wasm-pack/installer/
 
 ## Create new rust project using this template
 1. Fork this repository
 5. `yarn install` to install npm dependencies.
-6. `src/index.js` is the entry point for webpack. 
+6. `src/index.js` is the entry point for webpack.
 7. Rust library code goes to `src/lib.rs`
-8. `yarn run compile` to run webpack once. Output is compiled to `target` and `dist`.
-9. `yarn start` to start the local test server, serving from `dist`.  
+8. `yarn compile` to run wasm-pack once. Output is compiled to `pkg`.
+9. `yarn webpack` to run webpack once. Output is compiled to `dist`.
+10. `yarn serve` to start the local test server, serving from `dist`.

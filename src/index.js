@@ -1,7 +1,5 @@
-import rustWasm from './lib.rs'
-
-rustWasm().then(result => {
-  const add = result.instance.exports['add'];
-  var message = 'return value was ' + add(2, 3)
+(async () => {
+  const Rust = await import("../pkg/webassembly_template");
+  let message = "return value was " + Rust.add(2, 3);
   alert(message);
-});
+})();
