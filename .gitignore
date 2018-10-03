@@ -2,3 +2,6 @@ target
 node_modules
 dist/**/*.*
 !dist/index.html
+!dist/index.js
+bin
+wasm-pack.log

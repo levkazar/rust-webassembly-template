@@ -1,6 +1,5 @@
-import Rust from './index.rs';
-
-Rust.then(rustLib => {
-  let message = 'return value was ' + rustLib.add(2, 3);
-  console.log(message);
-});
+(async () => {
+  const Rust = await import("../pkg/webassembly_template");
+  let message = "return value was " + Rust.add(2, 3);
+  alert(message);
+})();
