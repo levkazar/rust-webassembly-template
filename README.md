@@ -12,6 +12,8 @@ This template is configured for compilation with `wasm-pack`.
 4. `rustup default nightly`
 
 ## Install wasm-pack
+`cargo install wasm-pack`
+or
 https://rustwasm.github.io/wasm-pack/installer/
 
 ## Create new rust project using this template
@@ -19,6 +21,6 @@ https://rustwasm.github.io/wasm-pack/installer/
 5. `yarn install` to install npm dependencies.
 6. `src/index.js` is the entry point for webpack.
 7. Rust library code goes to `src/lib.rs`
-8. `npm run compile` to run wasm-pack once. Output is compiled to `pkg`.
-9. `npm run webpack` to run webpack once. Output is compiled to `dist`.
-10. `npm run serve` to start the local test server, serving from `dist`.
+8. `yarn compile` to run wasm-pack once. Output is compiled to `pkg`.
+9. `yarn webpack` to run webpack once. Output is compiled to `dist`.
+10. `yarn serve` to start the local test server, serving from `dist`.
