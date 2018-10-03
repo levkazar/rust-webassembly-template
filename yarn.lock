@@ -210,10 +210,6 @@ array-unique@^0.3.2:
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/array-unique/-/array-unique-0.3.2.tgz#a894b75d4bc4f6cd679ef3244a9fd8f46ae2d428"
 
-arraybuffer-to-string@^1.0.1:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/arraybuffer-to-string/-/arraybuffer-to-string-1.0.2.tgz#c373aa7bb0e6844d9a2bc9654c8889a9570a26e2"
-
 asn1.js@^4.0.0:
   version "4.10.1"
   resolved "https://registry.yarnpkg.com/asn1.js/-/asn1.js-4.10.1.tgz#b9c2bf5805f1e64aadeed6df3a2bfafb5a73f5a0"
@@ -2021,14 +2017,14 @@ run-queue@^1.0.0, run-queue@^1.0.3:
   dependencies:
     aproba "^1.1.1"
 
-rust-native-wasm-loader@^0.2.2:
-  version "0.2.7"
-  resolved "https://registry.yarnpkg.com/rust-native-wasm-loader/-/rust-native-wasm-loader-0.2.7.tgz#047114ae69734d582fac621b058ac4e4781225a2"
+rust-native-wasm-loader@^0.8.1:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/rust-native-wasm-loader/-/rust-native-wasm-loader-0.8.1.tgz#ba1fb10c740b5f364bf781f4283b3948efb2830f"
   dependencies:
-    arraybuffer-to-string "^1.0.1"
     async-child-process "^1.1.1"
     fs-extra "^5.0.0"
     loader-utils "^1.1.0"
+    semver "^5.5.0"
 
 safe-buffer@^5.0.1, safe-buffer@^5.1.0, safe-buffer@^5.1.1, safe-buffer@^5.1.2, safe-buffer@~5.1.0, safe-buffer@~5.1.1:
   version "5.1.2"
