@@ -5,3 +5,4 @@ dist/**/*.*
 bin
 wasm-pack.log
 pkg
+yarn-error.log
