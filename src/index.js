@@ -1,7 +1,12 @@
-import rustWasm from './lib.rs'
+import * as Rust from './lib.rs'
 
-rustWasm().then(result => {
-  const add = result.instance.exports['add'];
-  var message = 'return value was ' + add(2, 3)
-  alert(message);
-});
+(async () => {
+  try {
+    const lib = await Rust();
+    const add = lib.instance.exports['add'];
+    let message = 'return value was ' + add(2, 3)
+    alert(message);
+  } catch (e) {
+    alert(e);
+  }
+})();
