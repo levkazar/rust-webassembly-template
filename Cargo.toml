@@ -1,7 +1,10 @@
 [package]
-name = "webassembly_template"
+name = "game_of_rust"
 version = "0.1.0"
 authors = ["your.name"]
+
+[profile.release]
+debug = true
 
 [lib]
 crate-type = ["cdylib"]
@@ -11,7 +14,9 @@ default-features = ["console_error_panic_hook", "wee_alloc"]
 
 [dependencies]
 cfg-if = "0.1.2"
+rand = "^0.5.5"
 wasm-bindgen = "0.2"
+js-sys = "0.2"
 
 # The `console_error_panic_hook` crate provides better debugging of panics by
 # logging them with `console.error`. This is great for development, but requires
