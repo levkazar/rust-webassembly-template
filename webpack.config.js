@@ -1,28 +1,10 @@
 const path = require("path");
 
 module.exports = {
-  mode: "development",
   entry: "./src/index.js",
   output: {
-    filename: "bundle.js",
-    path: path.resolve(__dirname, "dist")
+    path: path.resolve(__dirname, "dist"),
+    filename: "index.js",
   },
-  module: {
-    rules: [
-      {
-        test: /\.rs$/,
-        use: [
-          {
-            loader: "wasm-loader"
-          },
-          {
-            loader: "rust-native-wasm-loader",
-            options: {
-              release: true
-            }
-          }
-        ]
-      }
-    ]
-  }
+  mode: "development"
 };

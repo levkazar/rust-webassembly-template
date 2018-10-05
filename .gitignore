@@ -1,5 +1,8 @@
 target
 node_modules
-dist
+dist/**/*.*
 !dist/index.html
+bin
+wasm-pack.log
+pkg
 yarn-error.log
